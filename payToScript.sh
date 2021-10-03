@@ -1,6 +1,8 @@
 source ./functions.sh
 getInputTx $4
 
+CARDANO_CLI=/home/v-dev/WebstormProjects/Crypt/cardano-node-1.30.0/cardano-cli
+
 FROM_ADDR=$SELECTED_WALLET_ADDR
 PAYMENT=$1
 SCRIPT_ADDRESS=$($CARDANO_CLI address build --payment-script-file ./scripts/${2}.plutus --testnet-magic $TESTNET_MAGIC_NUM)
