@@ -25,7 +25,7 @@ FEE_ADDR=$SELECTED_WALLET_ADDR
 $CARDANO_CLI query protocol-parameters --testnet-magic $TESTNET_MAGIC_NUM > params.json
 
 removeTxFiles
-
+# stop here
 $CARDANO_CLI transaction build \
 --tx-in b44e37acade2760b2aa59f2f28f00515de4c0cac24b3948679314a9f253fb12d \
 --tx-in 4fd3e9446ab23484f6be5424c2ac7804ca29a33068f4405510da69c158e40ec9 \
